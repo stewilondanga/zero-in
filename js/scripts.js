@@ -91,8 +91,10 @@ function interAction(t, a, b, m) {
 }
 
 // init game
-/*for(i=10;i--;)
-	for(j=10;j--;)
-		game.appendChild(tile(i,j,7+(R()*3)|0))
+for (i = 10; i--;)
+  for (j = 10; j--;)
+    game.appendChild(tile(i, j, 7 + (R() * 3) | 0))
 
-window.onclick=function(e){if(e.target.classList.contains('tile'))interAction(e.target)}
+window.onclick = function(e) {
+  if (e.target.classList.contains('tile')) interAction(e.target)
+}

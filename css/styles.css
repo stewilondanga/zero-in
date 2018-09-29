@@ -28,13 +28,13 @@ body {
   height: 1.5em;
 }
 
-/*#game {
-	position: absolute;
-	width: 100vw;
-	height: 100vh;
+#game {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
 }
 
-.tile {
+/*.tile {
 	position: absolute;
 	border-radius: 5px;
 	transition: top 0.3s linear, left 0.1s linear, opacity 0.1s linear, background-color 0.5s linear;

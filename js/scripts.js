@@ -18,10 +18,12 @@ $$ = function(x, c) {
 $T = function $T(x, y) {
   return $('.tile.x' + x + '.y' + (y < 0 ? 'h' : y))
 } // get tile
-/*lock=function(l){game.classList[l?'add':'remove']('lock')}
+lock = function(l) {
+  game.classList[l ? 'add' : 'remove']('lock')
+}
 
 // create tile
-function tile(x,y,v,t){
+/*function tile(x,y,v,t){
 	t=document.createElement('div')
 	t.setPos=function(x,y){t.pos={x:x,y:y};t.setAttribute('class','tile x'+x+' y'+(y<0?'h':y))}
 	t.setVal=function(v){t.textContent=v;t.style.backgroundColor='hsl('+((v*100)%360)+',100%,'+(20+v*5)+'%)'}

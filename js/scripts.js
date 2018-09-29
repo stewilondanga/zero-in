@@ -1,13 +1,13 @@
-/*var navigate = (function() {
-	$('.dd').toggle();
-	$('.dd_btn').click(function() {
-		var dataName = $(this).attr('data-name');
-		$('.dd').hide();
-		$('.' + dataName).toggle();
-	});
+var navigate = (function() {
+  $('.dd').toggle();
+  $('.dd_btn').click(function() {
+    var dataName = $(this).attr('data-name');
+    $('.dd').hide();
+    $('.' + dataName).toggle();
+  });
 })();
 
-R=Math.random,d=document,moves=0
+/*R=Math.random,d=document,moves=0
 // mini jquery ;) (equivalent to dev console's native $/$$ functions)
 $ =function(x,c){return(c||d).querySelector(x)}
 $$=function(x,c){return[].slice.call((c||d).querySelectorAll(x))}

@@ -137,8 +137,11 @@ body {
   top: 90vh;
 }
 
-/*.x9 { left: 90vw; }
-.fade-out {
+.x9 {
+  left: 90vw;
+}
+
+/*.fade-out {
 	opacity:0;
 }
 

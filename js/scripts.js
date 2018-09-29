@@ -42,16 +42,20 @@ function tile(x, y, v, t) {
 }
 
 // remove tile and execute callback on transition end
-/*function removeTile(t,cb,ex,h){
-	t.classList.add('fade-out')
-	setTimeout(function(){
-		try{game.removeChild(t)}catch(ex){console.log(ex.message)}
-		if(cb)cb()
-	},100)
+function removeTile(t, cb, ex, h) {
+  t.classList.add('fade-out')
+  setTimeout(function() {
+    try {
+      game.removeChild(t)
+    } catch (ex) {
+      console.log(ex.message)
+    }
+    if (cb) cb()
+  }, 100)
 }
 
 // get adjacent tiles with same numbers
-function getAdjacentTiles(t,t0,t1,l,D,v,r,i){
+/*function getAdjacentTiles(t,t0,t1,l,D,v,r,i){
 	for(r=[],v=t.textContent,i=4,D="01211012";i--;){
 		l=[D[i*2]-1,D[i*2+1]-1]
 		t1=$T(t.pos.x+l[0],t.pos.y+l[1])

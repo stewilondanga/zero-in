@@ -57,8 +57,11 @@ body {
   background: #fff!important;
 }
 
-/*.yh { top:-10vh; }
-.y0 { top:  0 ; } .x0 { left:  0 ; }
+.yh {
+  top: -10vh;
+}
+
+/*.y0 { top:  0 ; } .x0 { left:  0 ; }
 .y1 { top: 10vh; } .x1 { left: 10vw; }
 .y2 { top: 20vh; } .x2 { left: 20vw; }
 .y3 { top: 30vh; } .x3 { left: 30vw; }

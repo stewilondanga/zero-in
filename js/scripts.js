@@ -15,8 +15,10 @@ $ = function(x, c) {
 $$ = function(x, c) {
   return [].slice.call((c || d).querySelectorAll(x))
 }
-/*$T=function $T(x,y){return $('.tile.x'+x+'.y'+(y<0?'h':y))} // get tile
-lock=function(l){game.classList[l?'add':'remove']('lock')}
+$T = function $T(x, y) {
+  return $('.tile.x' + x + '.y' + (y < 0 ? 'h' : y))
+} // get tile
+/*lock=function(l){game.classList[l?'add':'remove']('lock')}
 
 // create tile
 function tile(x,y,v,t){

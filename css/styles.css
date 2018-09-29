@@ -4,12 +4,13 @@
   -webkit-box-sizing: border-box;
 }
 
-/*body {
-  text-align: center;
-  font-family: courier;
-  background-image: url("../assets/image.jpeg");
-  background-repeat: no-repeat;
-  background-size: 100%;
+body {
+  background: #000;
+  margin: 0;
+  overflow: hidden;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 
 .my_social {
@@ -23,18 +24,8 @@
   height: 2.5em;
 }
 
-.my_social a img {
+/*.my_social a img {
   height: 1.5em;
-}
-
-
-body {
-	background: #000;
-	margin: 0;
-	overflow: hidden;
-	        user-select: none;
-	   -moz-user-select: none;
-	-webkit-user-select: none;
 }
 
 #game {

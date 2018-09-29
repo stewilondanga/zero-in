@@ -55,17 +55,17 @@ function removeTile(t, cb, ex, h) {
 }
 
 // get adjacent tiles with same numbers
-/*function getAdjacentTiles(t,t0,t1,l,D,v,r,i){
-	for(r=[],v=t.textContent,i=4,D="01211012";i--;){
-		l=[D[i*2]-1,D[i*2+1]-1]
-		t1=$T(t.pos.x+l[0],t.pos.y+l[1])
-		if(t1&&t1!=t0&&t1.textContent==v&&!t1.classList.contains('sel'))
-			t1.classList.add('sel'),r.push(t1),[].push.apply(r,getAdjacentTiles(t1,t0?t0:t))
-	}
-	return r
+function getAdjacentTiles(t, t0, t1, l, D, v, r, i) {
+  for (r = [], v = t.textContent, i = 4, D = "01211012"; i--;) {
+    l = [D[i * 2] - 1, D[i * 2 + 1] - 1]
+    t1 = $T(t.pos.x + l[0], t.pos.y + l[1])
+    if (t1 && t1 != t0 && t1.textContent == v && !t1.classList.contains('sel'))
+      t1.classList.add('sel'), r.push(t1), [].push.apply(r, getAdjacentTiles(t1, t0 ? t0 : t))
+  }
+  return r
 }
 
-function interAction(t,a,b,m){
+/*function interAction(t,a,b,m){
 	if (game.classList.contains('lock')||$$('.sel').length>0)return
 	m=t.textContent|0
 	if(m>0&&(a=getAdjacentTiles(t)).length>0)moves++,lock(true),~function removeTiles(){

@@ -101,7 +101,11 @@ body {
   left: 40vw;
 }
 
-/*.y5 { top: 50vh; } .x5 { left: 50vw; }
+.y5 {
+  top: 50vh;
+}
+
+/*.x5 { left: 50vw; }
 .y6 { top: 60vh; } .x6 { left: 60vw; }
 .y7 { top: 70vh; } .x7 { left: 70vw; }
 .y8 { top: 80vh; } .x8 { left: 80vw; }

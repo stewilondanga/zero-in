@@ -117,7 +117,11 @@ body {
   left: 60vw;
 }
 
-/*.y7 { top: 70vh; } .x7 { left: 70vw; }
+.y7 {
+  top: 70vh;
+}
+
+/*.x7 { left: 70vw; }
 .y8 { top: 80vh; } .x8 { left: 80vw; }
 .y9 { top: 90vh; } .x9 { left: 90vw; }
 .fade-out {

@@ -77,7 +77,11 @@ body {
   left: 10vw;
 }
 
-/*.y2 { top: 20vh; } .x2 { left: 20vw; }
+.y2 {
+  top: 20vh;
+}
+
+/*.x2 { left: 20vw; }
 .y3 { top: 30vh; } .x3 { left: 30vw; }
 .y4 { top: 40vh; } .x4 { left: 40vw; }
 .y5 { top: 50vh; } .x5 { left: 50vw; }

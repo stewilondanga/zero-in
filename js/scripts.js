@@ -23,16 +23,26 @@ lock = function(l) {
 }
 
 // create tile
-/*function tile(x,y,v,t){
-	t=document.createElement('div')
-	t.setPos=function(x,y){t.pos={x:x,y:y};t.setAttribute('class','tile x'+x+' y'+(y<0?'h':y))}
-	t.setVal=function(v){t.textContent=v;t.style.backgroundColor='hsl('+((v*100)%360)+',100%,'+(20+v*5)+'%)'}
-	t.setVal(v);t.setPos(x,y)
-	return t
+function tile(x, y, v, t) {
+  t = document.createElement('div')
+  t.setPos = function(x, y) {
+    t.pos = {
+      x: x,
+      y: y
+    };
+    t.setAttribute('class', 'tile x' + x + ' y' + (y < 0 ? 'h' : y))
+  }
+  t.setVal = function(v) {
+    t.textContent = v;
+    t.style.backgroundColor = 'hsl(' + ((v * 100) % 360) + ',100%,' + (20 + v * 5) + '%)'
+  }
+  t.setVal(v);
+  t.setPos(x, y)
+  return t
 }
 
 // remove tile and execute callback on transition end
-function removeTile(t,cb,ex,h){
+/*function removeTile(t,cb,ex,h){
 	t.classList.add('fade-out')
 	setTimeout(function(){
 		try{game.removeChild(t)}catch(ex){console.log(ex.message)}
